@@ -29,4 +29,4 @@ custom_transaction = CustomTransaction(None, None, instance, deep)
     custom_transaction.revert_sqlalchemy_continuum_locked()
 ```
 
-Obs. Eestou usando OID como primary key, futuramente vou deixar configurável por parâmetro.
+Obs. Estou usando OID como primary key, futuramente vou deixar configurável por parâmetro.
