@@ -24,6 +24,9 @@ from .transaction import CustomTransaction
 deep = dict((r, {}) for r in relations)
            custom_transaction = CustomTransaction(self.session, old_instance, instance, deep)
            custom_transaction.save_or_update_transaction()
-'''
+	   
+custom_transaction = CustomTransaction(None, None, instance, deep)
+    custom_transaction.revert_sqlalchemy_continuum_locked()
+```
 
-Obs. Neste código estou usando OID como primary key, futuramente vou deixar configurável por parâmetro.
+Obs. Eestou usando OID como primary key, futuramente vou deixar configurável por parâmetro.
