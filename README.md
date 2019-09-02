@@ -11,10 +11,10 @@ Também é necessário criar uma tabela de transação contendo as chaves estran
 Exemplo:
 ```sql
 CREATE TABLE NOME_TABELA_TRANSACTION (
-  OID NUMBER NOT NULL,
+	OID NUMBER NOT NULL,
 	ENTITY_OID NUMBER(19,0) NULL, -- Id da tabela principal
 	PRODUCT_ID_TR NUMBER NULL,
-  CONSTRAINT NOME_TABELA_TR_PK PRIMARY KEY (OID)
+  	CONSTRAINT NOME_TABELA_TR_PK PRIMARY KEY (OID)
  );
 ```
 
